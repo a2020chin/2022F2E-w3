@@ -16,14 +16,14 @@ const Homepage = () => {
     //     trigger: '.am_MediumShot',
     //     markers: true,
     //     start: 'top 0',
-    //     end: '600%',
+    //     end: '200%',
     //     pin: true, 
     //     scrub: 1,
     //     pinSpacer: true
     //   }
     // })
     //   .to('.am_MediumCloseUp',{
-    //     'transform': 'translateY(-50%)'
+    //     top: '-50%',
     //   })
   
 
@@ -35,16 +35,13 @@ const Homepage = () => {
 
   return (
     <>
-    <MediumShot>
-      <MediumCloseUp/>
-      <LongShot/>
-    </MediumShot>
-
+      <MediumShot>
+        <MediumCloseUp/>
+        <LongShot/>
+      </MediumShot>
     </>
   )
 }
-
-// const Para = ({ className, children }) => <Parallax className={className}>{children}</Parallax>;
 
 
 
@@ -64,6 +61,7 @@ const MediumShot = tw.div`
   w-screen
   h-screen
   relative
+  overflow-x-hidden
   bg-[url('https://imgur.com/9QutbbP.png')]
   bg-cover
 `
