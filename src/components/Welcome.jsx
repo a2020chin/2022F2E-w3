@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import tw from "tailwind-styled-components"
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import BubbleEffect from '../components/Bubble';
 
@@ -91,8 +91,8 @@ const Welcome = () => {
 
   const Bubble = tw.canvas`
     bg-gradient-to-b
-   from-[#2C8492]
-   to-[#70D6DF]
+    from-[#2C8492]
+    to-[#70D6DF]
   `
 
   const Dialogue = tw.div`
@@ -158,7 +158,7 @@ const Welcome = () => {
           <WelcomeText $textnum={'text4'} $blod={true} />
           <WelcomeText $textnum={'text5'} />
         </div>
-        <NavLink className='am_toCharacter px-12 py-4 bg-[#70D6DF] rounded-xl shadow-[4px_4px_4px_rgba(0,0,0,0.25)] self-end font-bold text-[28px] opacity-0' to="/character" >接受挑戰</NavLink>
+        <Link className='am_toCharacter px-12 py-4 bg-[#70D6DF] rounded-xl shadow-[4px_4px_4px_rgba(0,0,0,0.25)] self-end font-bold text-[28px] opacity-0' to="/Character" >接受挑戰</Link>
       </Dialogue>
       <img className='absolute bottom-3 right-8' src="./images/Tica.png" alt="" />
     </section>

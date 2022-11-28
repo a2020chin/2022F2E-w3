@@ -5,7 +5,7 @@
 
 @layer base {
     html, body {
-      @apply box-border overflow-x-hidden
+      @apply box-border overflow-x-hidden font-NotoSans
     }
     /* section {
       @apply w-full h-screen
